@@ -66,13 +66,13 @@ exports.up = async (knex) => {
       createNameTable(table);
       table.string('code', 10).notNullable().unique();
     }),
-
-    knex.schema.createTable(tableNames.state, (table) => {
-      createNameTable(table);
-      table.string('code', 10).notNullable();
-      references(table, 'country');
-    }),
   ]);
+
+  await knex.schema.createTable(tableNames.state, (table) => {
+    createNameTable(table);
+    table.string('code', 10).notNullable();
+    references(table, 'country');
+  });
 
   await knex.schema.createTable(tableNames.address, (table) => {
     table.increments().notNullable();
@@ -80,9 +80,10 @@ exports.up = async (knex) => {
     table.string('street_address_2', 50);
     table.string('city').notNullable();
     table.string('zip', 15).notNullable();
-    table.float('latitude', 5).notNullable();
-    table.float('longitude', 5).notNullable();
+    table.float('latitude', 9, 7).notNullable();
+    table.float('longitude', 9, 7).notNullable();
     references(table, 'state');
+    addDefaultColumns(table);
   });
 
   await knex.schema.createTable(tableNames.company, (table) => {
@@ -93,12 +94,64 @@ exports.up = async (knex) => {
     link(table, 'website_url');
     email(table, 'email');
     references(table, 'address');
+    addDefaultColumns(table);
+  });
+
+  await knex.schema.createTable(tableNames.size, (table) => {
+    createNameTable(table);
+    table.decimal('length', 5, 2);
+    table.decimal('width', 5, 2);
+    table.decimal('height', 5, 2);
+    table.decimal('volume', 5, 2);
+    references(table, 'shape');
+  });
+
+  await knex.schema.createTable(tableNames.item, (table) => {
+    createNameTable(table);
+    table.string('description', 2000);
+    table.string('sku', 16).unique();
+    table.boolean('sparks_joy').notNullable();
+    references(table, 'user');
+    references(table, 'item_type');
+    references(table, 'company');
+    references(table, 'size');
+  });
+
+  await knex.schema.createTable(tableNames.item_info, (table) => {
+    table.increments().notNullable();
+    table.decimal('price');
+    table.date('purchase_date');
+    table.date('expiration_date');
+    table.date('last_used');
+    references(table, 'inventory_location');
+    references(table, 'item');
+    references(table, 'company');
+    addDefaultColumns(table);
+  });
+
+  await knex.schema.createTable(tableNames.item_image, (table) => {
+    table.increments().notNullable();
+    link(table, 'image_url');
+    references(table, 'item');
+    addDefaultColumns(table);
+  });
+
+  await knex.schema.createTable(tableNames.related_item, (table) => {
+    table.increments().notNullable();
+    references(table, 'item');
+    references(table, 'related_item');
+    addDefaultColumns(table);
   });
 };
 
 exports.down = async (knex) => {
   await Promise.all(
     [
+      tableNames.related_item,
+      tableNames.item_image,
+      tableNames.item_info,
+      tableNames.item,
+      tableNames.size,
       tableNames.company,
       tableNames.address,
       tableNames.state,
