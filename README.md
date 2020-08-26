@@ -13,10 +13,18 @@ Every Record will have:
 * [x] User
 * [x] Item
 * [x] Item Type
-* [ ] Comment
+* [x] Comment
 * [x] Manufacturer
-* [ ] Warranty
+* [x] Warranty/Expiration
 * [x] Item Location
 * [x] Item Purchase Location
 
 ## Talk about normalization
+
+## Seed the Database
+
+* [ ] User
+* [ ] Countries
+* [ ] US States
+* [ ] Item Types
+* [ ] Location

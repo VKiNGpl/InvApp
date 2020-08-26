@@ -110,7 +110,7 @@ exports.up = async (knex) => {
     createNameTable(table);
     table.string('description', 2000);
     table.string('sku', 16).unique();
-    table.boolean('sparks_joy').notNullable();
+    table.boolean('sparks_joy').defaultTo(false).notNullable();
     references(table, 'user');
     references(table, 'item_type');
     references(table, 'company');
