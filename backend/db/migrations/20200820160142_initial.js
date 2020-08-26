@@ -147,19 +147,19 @@ exports.up = async (knex) => {
 exports.down = async (knex) => {
   await Promise.all(
     [
+      tableNames.item_type,
       tableNames.related_item,
       tableNames.item_image,
       tableNames.item_info,
-      tableNames.item,
       tableNames.size,
+      tableNames.item,
       tableNames.company,
       tableNames.address,
       tableNames.state,
       tableNames.country,
-      tableNames.user,
-      tableNames.item_type,
       tableNames.shape,
       tableNames.inventory_location,
+      tableNames.user,
     ].map((tableName) => knex.schema.dropTable(tableName)),
   );
 };
