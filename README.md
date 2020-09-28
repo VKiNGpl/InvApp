@@ -1,4 +1,4 @@
-# Model a SQL Database
+# Model a SQL Database - tutorial by https://coding.garden/ 
 
 Entity - the description of some thing in you database
     * Record - is a singe instance of an Entity

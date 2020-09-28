@@ -1,22 +1,247 @@
 module.exports = [{
-  name: 'Illinois',
-  code: 'IL',
+  name: 'Alabama',
+  abbreviation: 'Ala.',
+  alpha_code: 'AL',
+  country_id: 1,
 }, {
-  name: 'Colorado',
-  code: 'CO',
+  name: 'Alaska',
+  alpha_code: 'AK',
+  country_id: 1,
 }, {
-  name: 'Indiana',
-  code: 'IN',
+  name: 'Arizona',
+  abbreviation: 'Ariz.',
+  alpha_code: 'AZ',
+  country_id: 1,
 }, {
-  name: 'Texas',
-  code: 'TX',
-}, {
-  name: 'Wyoming',
-  code: 'WY',
-}, {
-  name: 'New York',
-  code: 'NY',
+  name: 'Arkansas',
+  abbreviation: 'Ark.',
+  alpha_code: 'AR',
+  country_id: 1,
 }, {
   name: 'California',
-  code: 'CA',
+  abbreviation: 'Calif.',
+  alpha_code: 'CA',
+  country_id: 1,
+}, {
+  name: 'Colorado',
+  abbreviation: 'Colo.',
+  alpha_code: 'CO',
+  country_id: 1,
+}, {
+  name: 'Connecticut',
+  abbreviation: 'Conn.',
+  alpha_code: 'CT',
+  country_id: 1,
+}, {
+  name: 'Delaware',
+  abbreviation: 'Del.',
+  alpha_code: 'DE',
+  country_id: 1,
+}, {
+  name: 'District of Columbia',
+  abbreviation: 'D.C.',
+  alpha_code: 'DC',
+  country_id: 1,
+}, {
+  name: 'Florida',
+  abbreviation: 'Fla.',
+  alpha_code: 'FL',
+  country_id: 1,
+}, {
+  name: 'Georgia',
+  abbreviation: 'Ga.',
+  alpha_code: 'GA',
+  country_id: 1,
+}, {
+  name: 'Hawaii',
+  alpha_code: 'HI',
+  country_id: 1,
+}, {
+  name: 'Idaho',
+  alpha_code: 'ID',
+  country_id: 1,
+}, {
+  name: 'Illinois',
+  abbreviation: 'Ill.',
+  alpha_code: 'IL',
+  country_id: 1,
+}, {
+  name: 'Indiana',
+  abbreviation: 'Ind.',
+  alpha_code: 'IN',
+  country_id: 1,
+}, {
+  name: 'Iowa',
+  alpha_code: 'IA',
+  country_id: 1,
+}, {
+  name: 'Kansas',
+  abbreviation: 'Kans.',
+  alpha_code: 'KS',
+  country_id: 1,
+}, {
+  name: 'Kentucky',
+  abbreviation: 'Ky.',
+  alpha_code: 'KY',
+  country_id: 1,
+}, {
+  name: 'Louisiana',
+  alpha_code: 'LA',
+  country_id: 1,
+}, {
+  name: 'Maine',
+  abbreviation: 'Me.',
+  alpha_code: 'ME',
+  country_id: 1,
+}, {
+  name: 'Maryland',
+  abbreviation: 'Md.',
+  alpha_code: 'MD',
+  country_id: 1,
+}, {
+  name: 'Massachusetts',
+  abbreviation: 'Mass.',
+  alpha_code: 'MA',
+  country_id: 1,
+}, {
+  name: 'Michigan',
+  abbreviation: 'Mich.',
+  alpha_code: 'MI',
+  country_id: 1,
+}, {
+  name: 'Minnesota',
+  abbreviation: 'Minn.',
+  alpha_code: 'MN',
+  country_id: 1,
+}, {
+  name: 'Mississippi',
+  abbreviation: 'Miss.',
+  alpha_code: 'MS',
+  country_id: 1,
+}, {
+  name: 'Missouri',
+  abbreviation: 'Mo.',
+  alpha_code: 'MO',
+  country_id: 1,
+}, {
+  name: 'Montana',
+  abbreviation: 'Mont.',
+  alpha_code: 'MT',
+  country_id: 1,
+}, {
+  name: 'Nebraska',
+  abbreviation: 'Nebr.',
+  alpha_code: 'NE',
+  country_id: 1,
+}, {
+  name: 'Nevada',
+  abbreviation: 'Nev.',
+  alpha_code: 'NV',
+  country_id: 1,
+}, {
+  name: 'New Hampshire',
+  abbreviation: 'N.H.',
+  alpha_code: 'NH',
+  country_id: 1,
+}, {
+  name: 'New Jersey',
+  abbreviation: 'N.J.',
+  alpha_code: 'NJ',
+  country_id: 1,
+}, {
+  name: 'New Mexico',
+  abbreviation: 'N.Mex.',
+  alpha_code: 'NM',
+  country_id: 1,
+}, {
+  name: 'New York',
+  abbreviation: 'N.Y.',
+  alpha_code: 'NY',
+  country_id: 1,
+}, {
+  name: 'North Carolina',
+  abbreviation: 'N.C.',
+  alpha_code: 'NC',
+  country_id: 1,
+}, {
+  name: 'North Dakota',
+  alpha_code: 'ND',
+  country_id: 1,
+}, {
+  name: 'Ohio',
+  alpha_code: 'OH',
+  country_id: 1,
+}, {
+  name: 'Oklahoma',
+  abbreviation: 'Okla.',
+  alpha_code: 'OK',
+  country_id: 1,
+}, {
+  name: 'Oregon',
+  abbreviation: 'Ore',
+  alpha_code: 'OR',
+  country_id: 1,
+}, {
+  name: 'Pennsylvania',
+  abbreviation: 'Penn',
+  alpha_code: 'PA',
+  country_id: 1,
+}, {
+  name: 'Rhode Island',
+  abbreviation: 'R.I.',
+  alpha_code: 'RI',
+  country_id: 1,
+}, {
+  name: 'South Carolina',
+  abbreviation: 'S.C.',
+  alpha_code: 'SC',
+  country_id: 1,
+}, {
+  name: 'South Dakota',
+  alpha_code: 'SD',
+  country_id: 1,
+}, {
+  name: 'Tennessee',
+  abbreviation: 'Tenn.',
+  alpha_code: 'TN',
+  country_id: 1,
+}, {
+  name: 'Texas',
+  abbreviation: 'Tex.',
+  alpha_code: 'TX',
+  country_id: 1,
+}, {
+  name: 'Utah',
+  alpha_code: 'UT',
+  country_id: 1,
+}, {
+  name: 'Vermont',
+  abbreviation: 'Vt.',
+  alpha_code: 'VT',
+  country_id: 1,
+}, {
+  name: 'Virginia',
+  abbreviation: 'Va.',
+  alpha_code: 'VA',
+  country_id: 1,
+}, {
+  name: 'Washington',
+  abbreviation: 'Wash.',
+  alpha_code: 'WA',
+  country_id: 1,
+}, {
+  name: 'West Virginia',
+  abbreviation: 'W.Va.',
+  alpha_code: 'WV',
+  country_id: 1,
+}, {
+  name: 'Wisconsin',
+  abbreviation: 'Wis.',
+  alpha_code: 'WI',
+  country_id: 1,
+}, {
+  name: 'Wyoming',
+  abbreviation: 'Wyo.',
+  alpha_code: 'WY',
+  country_id: 1,
 }];
